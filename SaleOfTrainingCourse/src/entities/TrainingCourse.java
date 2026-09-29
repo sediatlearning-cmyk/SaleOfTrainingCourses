@@ -9,6 +9,8 @@ public class TrainingCourse {
 	private boolean inPerson;
 	private boolean remotely;
 	private double unitaryPrice;
+	private boolean isAvailable;
+	
 	/**
 	 * @param idTrainingCourse
 	 * @param name
