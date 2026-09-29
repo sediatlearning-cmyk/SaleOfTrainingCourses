@@ -19,9 +19,10 @@ public class TrainingCourse {
 	 * @param inPerson
 	 * @param remotely
 	 * @param unitaryPrice
+	 * @param isAvailable
 	 */
 	public TrainingCourse(int idTrainingCourse, String name, String description, int durationInDays, boolean inPerson,
-			boolean remotely, double unitaryPrice) {
+			boolean remotely, double unitaryPrice, boolean isAvailable) {
 		super();
 		this.idTrainingCourse = idTrainingCourse;
 		this.name = name;
@@ -30,6 +31,7 @@ public class TrainingCourse {
 		this.inPerson = inPerson;
 		this.remotely = remotely;
 		this.unitaryPrice = unitaryPrice;
+		this.isAvailable = isAvailable;
 	}
 	/**
 	 * @return the idTrainingCourse
@@ -115,6 +117,20 @@ public class TrainingCourse {
 	public void setUnitaryPrice(double unitaryPrice) {
 		this.unitaryPrice = unitaryPrice;
 	}
+	
+	/**
+	 * @return the isAvailable
+	 */
+	public boolean isAvailable() {
+		return isAvailable;
+	}
+	/**
+	 * @param isAvailable the isAvailable to set
+	 */
+	public void setAvailable(boolean isAvailable) {
+		this.isAvailable = isAvailable;
+	}
+	
 	@Override
 	public String toString() {
 		return "TrainingCourse [idTrainingCourse=" + idTrainingCourse + ", name=" + name + ", description="
