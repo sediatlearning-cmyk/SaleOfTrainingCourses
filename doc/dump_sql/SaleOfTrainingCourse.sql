@@ -28,7 +28,7 @@ CREATE TABLE sotc_training_course (
 	tc_in_person boolean NOT NULL,
 	tc_remotely boolean NOT NULL ,
 	tc_unitary_price float(8) NOT NULL DEFAULT 0,
-	tc_is_available boolean NOT NULL
+	tc_is_available boolean NOT NULL,
 	PRIMARY KEY (`tc_id_training_course`)
 ) ENGINE = InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -36,18 +36,18 @@ CREATE TABLE sotc_training_course (
 -- Déchargement des données de la table `sotc_training_course`
 --
 
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Apprenez à programmer en Java","Dans ce cours, apprenez les bases de la programmation en Java, prenez en main la programmation orientée objet et perfectionnez votre maîtrise de Java.", 10, TRUE,TRUE, 200 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Créez une application Java avec Spring Boot","", 8, TRUE, TRUE,  160 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Créez une maquette web avec Figma","Decouvrez comment construire le rendu visuel d'une page web.", 6, FALSE,TRUE, 120 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Créez des pages web dynamiques avec JavaScript","Manipulez le DOM, rendez votre page web dynamique, utilisez une API HTTP pour interagir avec un service web, et utilisez des librairies pour enrichir votre page web.", 12, TRUE, TRUE, 240 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Découvrez TypeScript","Apprenez à écrire en TypeScript pour détecter vos erreurs de code avant même que vous exécutiez votre code !", 4, TRUE, FALSE, 80 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Adoptez Visual Studio comme environnement de développement","Prenez en main l'IDE Visual Studio pour créer et manipuler un projet de développement ! Vous découvrirez les avantages d'un IDE par rapport à un simple éditeur de code comme Visual Studio Code.", 10, FALSE, TRUE, 200 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Testez votre code Java pour réaliser des applications de qualité","", 10, FALSE, TRUE, 200 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Créez votre site web avec HTML5 et CSS3","", 15, TRUE,FALSE, 300);
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Requêtez une base de données avec SQL","Initiez-vous à la modélisation relationnelle et construisez des requêtes SQL avec des fonctions pertinentes pour alimenter vos data analyses avec les bonnes données.", 12, TRUE, TRUE, 240 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Gérez du code avec Git et GitHub","", 6, TRUE, TRUE, 120 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Découvrez l'univers de la cybersécurité","Comprenez le déroulement des cyberattaques, enjeu majeur de société, et découvrez l’ensemble des métiers qui participent à la cybersécurité. Peut-être vous demain ?", 4, TRUE, FALSE, 80 );
-INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price ) VALUES ( "Débutez avec Angular","", 10, FALSE, TRUE, 200 );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Apprenez à programmer en Java","Dans ce cours, apprenez les bases de la programmation en Java, prenez en main la programmation orientée objet et perfectionnez votre maîtrise de Java.", 10, TRUE,TRUE, 200, TRUE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Créez une application Java avec Spring Boot","", 8, TRUE, TRUE,  160, FALSE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Créez une maquette web avec Figma","Decouvrez comment construire le rendu visuel d'une page web.", 6, FALSE,TRUE, 120, TRUE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Créez des pages web dynamiques avec JavaScript","Manipulez le DOM, rendez votre page web dynamique, utilisez une API HTTP pour interagir avec un service web, et utilisez des librairies pour enrichir votre page web.", 12, TRUE, TRUE, 240, TRUE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Découvrez TypeScript","Apprenez à écrire en TypeScript pour détecter vos erreurs de code avant même que vous exécutiez votre code !", 4, TRUE, FALSE, 80, TRUE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Adoptez Visual Studio comme environnement de développement","Prenez en main l'IDE Visual Studio pour créer et manipuler un projet de développement ! Vous découvrirez les avantages d'un IDE par rapport à un simple éditeur de code comme Visual Studio Code.", 10, FALSE, TRUE, 200, FALSE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Testez votre code Java pour réaliser des applications de qualité","", 10, FALSE, TRUE, 200, TRUE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Créez votre site web avec HTML5 et CSS3","", 15, TRUE,FALSE, 300, FALSE);
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Requêtez une base de données avec SQL","Initiez-vous à la modélisation relationnelle et construisez des requêtes SQL avec des fonctions pertinentes pour alimenter vos data analyses avec les bonnes données.", 12, TRUE, TRUE, 240, FALSE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Gérez du code avec Git et GitHub","", 6, TRUE, TRUE, 120, TRUE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Découvrez l'univers de la cybersécurité","Comprenez le déroulement des cyberattaques, enjeu majeur de société, et découvrez l’ensemble des métiers qui participent à la cybersécurité. Peut-être vous demain ?", 4, TRUE, FALSE, 80, TRUE );
+INSERT INTO sotc_training_course ( tc_name, tc_description, tc_duration_in_days, tc_in_person, tc_remotely, tc_unitary_price, tc_is_available ) VALUES ( "Débutez avec Angular","", 10, FALSE, TRUE, 200, FALSE );
 
 SELECT * FROM sotc_training_course;
 
