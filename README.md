@@ -13,16 +13,22 @@ Write down the general informations of your project. It is worth to always put a
 ## Technologies
 ***
 A list of technologies used within the project:
-* [Technologie name](https://example.com): Version 12.3 
-* [Technologie name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
+* [Java 1.8]: Version 1.8 
+* [Driver mariadb]: Version 2.3.0
+* [winp]: winp.zip, which you can use in the project
 ## Installation
 ***
 A little intro about the installation. 
 ```
+You must clone this project
+
 $ git clone https://github.com/sediatlearning-cmyk/SaleOfTrainingCourses.git
-$ 
-$ 
-$ 
+
+Next, use phpMyAdmin to access the database; to do this, you will need:
+ - Run winp.exe after unzipping the folder into the project's Winp directory;
+ - Install winp at the root of the drive, as it is a portable version.
+ - Replace the existing config.inc.php file with the one provided in the winp folder to enable connection to the phpMyAdmin database using the provided credentials.
+ - To replace the winp config.inc.php file with the one located in the Winp folder, navigate to the following path: winp -> Install -> phpmyadmin-5.2.3, and paste the file there.
+
 ```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
+
