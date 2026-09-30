@@ -10,13 +10,13 @@
 An application for selling in-person or remote training courses, featuring keyword search capabilities and the option for logged-in users to order one or more courses for one or more clients.
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 
-## Technologies
+### Technologies
 ***
 A list of technologies used within the project:
 * [Java 1.8]: Version 1.8 
 * [Driver mariadb]: Version 2.3.0
 * [winp]: winp.zip, which you can use in the project
-## Installation
+### Installation
 ***
 A little intro about the installation. 
 ```
