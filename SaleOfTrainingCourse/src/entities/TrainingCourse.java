@@ -133,8 +133,12 @@ public class TrainingCourse {
 	
 	@Override
 	public String toString() {
-		return "TrainingCourse [idTrainingCourse=" + idTrainingCourse + ", name=" + name + ", description="
-				+ description + ", durationInDays=" + durationInDays + ", inPerson=" + inPerson + ", remotely="
-				+ remotely + ", unitaryPrice=" + unitaryPrice + "]";
+		return    "id : " + idTrainingCourse + ", \n"
+				+ "name : " + name + ", \n"
+				+ "description : "+ description + ", \n"
+				+ "durationInDays : " + durationInDays + ", \n"
+				+ "inPerson : " + inPerson + ", \n"
+				+ "remotely : "+ remotely + ", \n"
+				+ "unitaryPrice : " + unitaryPrice + "\n \n";
 	}
 }
