@@ -1,4 +1,5 @@
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 import daos.ITrainingCourse;
@@ -10,7 +11,7 @@ public class SaleOfTrainingCourse {
 	
 	private static Scanner scanner = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		
 		ITrainingCourse trainingCourse = new TrainingCourseImpl();
 		
@@ -18,7 +19,8 @@ public class SaleOfTrainingCourse {
 				"Afficher la liste des formations en fonction de leurs disponibilités.",
 				"Afficher la liste des formations par un mot clé",
 				"Afficher la liste des formations en présentiel",
-				"Afficher la liste des formations en distanciel"
+				"Afficher la liste des formations en distanciel",
+				"Se connecter"
 		};
 		
 		int userChoice = -1;
@@ -31,8 +33,9 @@ public class SaleOfTrainingCourse {
 				System.out.println(availableTrainingCourses);
 				break;
 			case 2:
+				String keyword= UserChoice.askTheUserToInputAKeyword(scanner);
 				System.out.println("Affichage de toutes les formations par le mot clé");
-				List<TrainingCourse> keyWordTrainingCourses = trainingCourse.findByWord();
+				List<TrainingCourse> keyWordTrainingCourses = trainingCourse.findByKeyWord(keyword);
 				System.out.println(keyWordTrainingCourses);
 				break;
 			case 3:
