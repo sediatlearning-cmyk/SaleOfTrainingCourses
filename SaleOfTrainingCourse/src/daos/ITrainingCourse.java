@@ -7,7 +7,7 @@ import entities.TrainingCourse;
 
 public interface ITrainingCourse {
 
-	public List<TrainingCourse> findByWord(String keyword) throws SQLException;
+	public List<TrainingCourse> findByKeyWord(String keyword) throws SQLException;
 	
 	public List<TrainingCourse> findByIsAvailableField();
 	
