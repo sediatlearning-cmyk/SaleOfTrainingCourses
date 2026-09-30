@@ -35,4 +35,10 @@ public class UserChoice {
 	    } 
 		return userInputChoice;
 	}
+	
+	public static String askTheUserToInputAKeyword(Scanner scanner) {
+		System.out.print("Quel mot recherchez vous?");
+		String keyWord = scanner.nextLine().toLowerCase();
+		return keyWord;
+	}
 }
