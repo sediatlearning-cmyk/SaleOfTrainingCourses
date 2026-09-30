@@ -14,9 +14,9 @@ public class ConfigDao {
 			e.printStackTrace();
 		}
 		
-		String url = "jdbc:mariadb://localhost:3306/";
+		String url = "jdbc:mariadb://localhost:3306/sale_of_training_course";
 		String login = "root";
-		String password = "";
+		String password = "?Root!123@PmA";
 		
 		return DriverManager.getConnection(url, login, password);
 	}
