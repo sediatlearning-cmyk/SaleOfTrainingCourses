@@ -1,12 +1,13 @@
 package daos;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import entities.TrainingCourse;
 
 public interface ITrainingCourse {
 
-	public List<TrainingCourse> findByWord();
+	public List<TrainingCourse> findByWord(String keyword) throws SQLException;
 	
 	public List<TrainingCourse> findByIsAvailableField();
 	
