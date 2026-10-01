@@ -1,4 +1,4 @@
-package daos;
+package daos.trainingcourse;
 
 import java.sql.SQLException;
 import java.util.List;
