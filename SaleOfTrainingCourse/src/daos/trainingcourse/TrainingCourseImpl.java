@@ -1,4 +1,4 @@
-package daos;
+package daos.trainingcourse;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import daos.ConfigDao;
 import entities.TrainingCourse;
 
 public class TrainingCourseImpl implements ITrainingCourse{
