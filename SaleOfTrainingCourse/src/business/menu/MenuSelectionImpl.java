@@ -56,9 +56,7 @@ public class MenuSelectionImpl implements IMenuSelection{
 				break;
 			case 5:
 				System.out.println("Bonjour");
-				System.out.println("Entrez votre login :");
 				String login = UserConnection.askTheUserToEnterHisLogin(scanner);
-				System.out.println("Entrez votre mot de passe :");
 				String password = UserConnection.askTheUserToEnterHisPassword(scanner);
 				user.saveCredentialsUser(login, password);
 				break;
