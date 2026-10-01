@@ -1,4 +1,4 @@
-package business;
+package business.menu;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -12,11 +12,11 @@ import entities.TrainingCourse;
 import utils.UserChoice;
 import utils.UserConnection;
 
-public class MenuSelection {
+public class MenuSelectionImpl implements IMenuSelection{
 	
 	private static Scanner scanner = new Scanner(System.in);
 	
-	public static void menuSelection() throws SQLException {
+	public void menuSelection() throws SQLException {
 		ITrainingCourse trainingCourse = new TrainingCourseImpl();
 		IUser user = new UserImpl();
 		
@@ -67,7 +67,7 @@ public class MenuSelection {
 				System.out.println("Entrez vos identifiants de connexion :");
 				login = UserConnection.askTheUserToEnterHisLogin(scanner);
 				password = UserConnection.askTheUserToEnterHisPassword(scanner);
-				//TODO to continue
+				
 			}
 		}
 	}
