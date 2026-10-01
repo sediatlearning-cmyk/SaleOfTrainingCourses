@@ -65,16 +65,17 @@ public class TrainingCourseImpl implements ITrainingCourse{
 				try(ResultSet resultSet = statement.executeQuery(sql)){
 
 					while(resultSet.next()) {
-
-						int resultSetIdTrainingCourse = resultSet.getInt(1);
-						String resultSetName = resultSet.getString(2);
-						String resultSetDescription = resultSet.getString(3);
-						int resultSetDurationInDays = resultSet.getInt(4);
-						boolean resultSetInPerson = resultSet.getBoolean(5);
-						boolean resultSetRemotely = resultSet.getBoolean(6);
-						double resultSetUnitaryPrice = resultSet.getDouble(7);
-						boolean resultSetIsAVailable = resultSet.getBoolean(8);
-						availableTrainingCourses.add(new TrainingCourse(resultSetIdTrainingCourse, resultSetName, resultSetDescription, resultSetDurationInDays, resultSetInPerson, resultSetRemotely, resultSetUnitaryPrice, resultSetIsAVailable));
+						availableTrainingCourses.add(
+								new TrainingCourse(
+								resultSet.getInt(1),
+								resultSet.getString(2), 
+								resultSet.getString(3), 
+								resultSet.getInt(4), 
+								resultSet.getBoolean(5), 
+								resultSet.getBoolean(6), 
+								resultSet.getDouble(7), 
+								resultSet.getBoolean(8)
+								));
 					}
 				}
 			}
