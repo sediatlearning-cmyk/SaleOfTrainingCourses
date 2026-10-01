@@ -62,6 +62,12 @@ public class MenuSelection {
 				String password = UserConnection.askTheUserToEnterHisPassword(scanner);
 				user.saveCredentialsUser(login, password);
 				break;
+			case 6:
+				System.out.println("Bonjour");
+				System.out.println("Entrez vos identifiants de connexion :");
+				login = UserConnection.askTheUserToEnterHisLogin(scanner);
+				password = UserConnection.askTheUserToEnterHisPassword(scanner);
+				//TODO to continue
 			}
 		}
 	}
