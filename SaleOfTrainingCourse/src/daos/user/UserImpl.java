@@ -10,7 +10,7 @@ public class UserImpl implements IUser{
 	String url = "jdbc:mariadb://localhost:3306/sale_of_training_course";
 
 	@Override
-	public void saveIdUser(String login, String password) throws SQLException {
+	public void saveCredentialsUser(String login, String password) throws SQLException {
 		String sql = "INSERT INTO sotc_user (us_login, us_password)VALUES (?, ?);";
 		try(Connection connection = DriverManager.getConnection(url, login, password)){
 			try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
