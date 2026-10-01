@@ -1,11 +1,15 @@
 import java.sql.SQLException;
-import business.MenuSelection;
+
+import business.menu.IMenuSelection;
+import business.menu.MenuSelectionImpl;
 
 public class SaleOfTrainingCourse {
 	
 	
 	public static void main(String[] args) throws SQLException {
 		
-		MenuSelection.menuSelection();
+		IMenuSelection menuSelectionImpl = new MenuSelectionImpl();
+		
+		menuSelectionImpl.menuSelection();
 	}
 }
