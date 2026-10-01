@@ -1,8 +1,9 @@
 package daos.user;
 
-import entities.User;
+import java.sql.SQLException;
+
 
 public interface IUser {
 	
-	public User saveIdUser(String login, String password);
+	public void saveIdUser(String login, String password) throws SQLException ;
 }
