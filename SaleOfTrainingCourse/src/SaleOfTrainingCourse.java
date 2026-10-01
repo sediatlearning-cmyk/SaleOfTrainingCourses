@@ -2,10 +2,14 @@
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
-import daos.ITrainingCourse;
-import daos.TrainingCourseImpl;
+
+import daos.trainingcourse.ITrainingCourse;
+import daos.trainingcourse.TrainingCourseImpl;
+import daos.user.IUser;
+import daos.user.UserImpl;
 import entities.TrainingCourse;
 import utils.UserChoice;
+import utils.UserConnection;
 
 public class SaleOfTrainingCourse {
 	
@@ -14,12 +18,14 @@ public class SaleOfTrainingCourse {
 	public static void main(String[] args) throws SQLException {
 		
 		ITrainingCourse trainingCourse = new TrainingCourseImpl();
+		IUser user = new UserImpl();
 		
 		String [] menu = {
 				"Afficher la liste des formations en fonction de leurs disponibilités.",
 				"Afficher la liste des formations par un mot clé",
 				"Afficher la liste des formations en présentiel",
 				"Afficher la liste des formations en distanciel",
+				"S'inscrire",
 				"Se connecter"
 		};
 		
@@ -47,6 +53,14 @@ public class SaleOfTrainingCourse {
 				System.out.println("Affichage de toutes les formations en distanciel");
 				List<TrainingCourse> remotelyTrainingCourses = trainingCourse.findByRemotely();
 				System.out.println(remotelyTrainingCourses);
+				break;
+			case 5:
+				System.out.println("Bonjour");
+				System.out.println("Entrez votre login :");
+				String login = UserConnection.askTheUserToEnterHisLogin(scanner);
+				System.out.println("Entrez votre mot de passe :");
+				String password = UserConnection.askTheUserToEnterHisPassword(scanner);
+				user.saveCredentialsUser(login, password);
 				break;
 			}
 		}
