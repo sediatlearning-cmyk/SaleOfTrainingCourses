@@ -16,6 +16,14 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
+-- ------------------------------------------------------------------------------
+-- - Reconstruction de la base de données                                     ---
+-- ------------------------------------------------------------------------------
+DROP DATABASE IF EXISTS sale_of_training_course;
+CREATE DATABASE sale_of_training_course;
+USE sale_of_training_course;
+
+
 --
 -- Structure de la table `sotc_training_course`
 --
