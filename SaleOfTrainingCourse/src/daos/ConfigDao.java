@@ -6,6 +6,12 @@ import java.sql.SQLException;
 
 public class ConfigDao {
 
+	/**
+	 * Function that establishes the database connection
+	 *
+	 * @return the connection or null is not connected
+	 * @throws SQLException 
+	 */
 	public static Connection getConnection() throws SQLException{
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");

@@ -5,6 +5,7 @@ public class Order {
 	private int idOrder;
 	private TrainingCourse trainingCourse;
 	private int quantity;
+	
 	/**
 	 * @param idOrder
 	 * @param trainingCourse
@@ -16,42 +17,52 @@ public class Order {
 		this.trainingCourse = trainingCourse;
 		this.quantity = quantity;
 	}
+	
 	/**
 	 * @return the idOrder
 	 */
 	public int getIdOrder() {
 		return idOrder;
 	}
+	
 	/**
 	 * @param idOrder the idOrder to set
 	 */
 	public void setIdOrder(int idOrder) {
 		this.idOrder = idOrder;
 	}
+	
 	/**
 	 * @return the trainingCourse
 	 */
 	public TrainingCourse getTrainingCourse() {
 		return trainingCourse;
 	}
+	
 	/**
 	 * @param trainingCourse the trainingCourse to set
 	 */
 	public void setTrainingCourse(TrainingCourse trainingCourse) {
 		this.trainingCourse = trainingCourse;
 	}
+	
 	/**
 	 * @return the quantity
 	 */
 	public int getQuantity() {
 		return quantity;
 	}
+	
 	/**
 	 * @param quantity the quantity to set
 	 */
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	 /**
+	  * Method that allows the various order fields to be displayed as a character string.
+	  * @return the character string containing all the order's information 
+	  */
 	@Override
 	public String toString() {
 		return "Order [idOrder=" + idOrder + ", trainingCourse=" + trainingCourse + ", quantity=" + quantity + "]";

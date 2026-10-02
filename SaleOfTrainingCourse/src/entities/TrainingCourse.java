@@ -33,84 +33,98 @@ public class TrainingCourse {
 		this.unitaryPrice = unitaryPrice;
 		this.isAvailable = isAvailable;
 	}
+	
 	/**
 	 * @return the idTrainingCourse
 	 */
 	public int getIdTrainingCourse() {
 		return idTrainingCourse;
 	}
+	
 	/**
 	 * @param idTrainingCourse the idTrainingCourse to set
 	 */
 	public void setIdTrainingCourse(int idTrainingCourse) {
 		this.idTrainingCourse = idTrainingCourse;
 	}
+	
 	/**
 	 * @return the name
 	 */
 	public String getName() {
 		return name;
 	}
+	
 	/**
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	/**
 	 * @return the description
 	 */
 	public String getDescription() {
 		return description;
 	}
+	
 	/**
 	 * @param description the description to set
 	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
 	/**
 	 * @return the durationInDays
 	 */
 	public int getDurationInDays() {
 		return durationInDays;
 	}
+	
 	/**
 	 * @param durationInDays the durationInDays to set
 	 */
 	public void setDurationInDays(int durationInDays) {
 		this.durationInDays = durationInDays;
 	}
+	
 	/**
 	 * @return the inPerson
 	 */
 	public boolean isInPerson() {
 		return inPerson;
 	}
+	
 	/**
 	 * @param inPerson the inPerson to set
 	 */
 	public void setInPerson(boolean inPerson) {
 		this.inPerson = inPerson;
 	}
+	
 	/**
 	 * @return the remotely
 	 */
 	public boolean isRemotely() {
 		return remotely;
 	}
+	
 	/**
 	 * @param remotely the remotely to set
 	 */
 	public void setRemotely(boolean remotely) {
 		this.remotely = remotely;
 	}
+	
 	/**
 	 * @return the unitaryPrice
 	 */
 	public double getUnitaryPrice() {
 		return unitaryPrice;
 	}
+	
 	/**
 	 * @param unitaryPrice the unitaryPrice to set
 	 */
@@ -124,6 +138,7 @@ public class TrainingCourse {
 	public boolean isAvailable() {
 		return isAvailable;
 	}
+	
 	/**
 	 * @param isAvailable the isAvailable to set
 	 */
@@ -131,6 +146,10 @@ public class TrainingCourse {
 		this.isAvailable = isAvailable;
 	}
 	
+	 /**
+	 * Method that allows the various training course fields to be displayed as a character string.
+	 * @return the character string containing all the training courses' information 
+	 */
 	@Override
 	public String toString() {
 		return    "id : " + idTrainingCourse + ", \n"

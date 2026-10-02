@@ -16,6 +16,9 @@ public class MenuSelectionImpl implements IMenuSelection{
 	
 	private static Scanner scanner = new Scanner(System.in);
 	
+	/**
+	 * Function that builds the menu and handles each menu case.
+	 */
 	public void menuSelection() throws SQLException {
 		ITrainingCourse trainingCourse = new TrainingCourseImpl();
 		IUser user = new UserImpl();

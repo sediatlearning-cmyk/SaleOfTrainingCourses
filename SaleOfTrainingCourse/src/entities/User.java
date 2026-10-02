@@ -5,6 +5,7 @@ public class User {
 	private int idUser;
 	private String login;
 	private String password;
+	
 	/**
 	 * @param idUser
 	 * @param login
@@ -16,42 +17,53 @@ public class User {
 		this.login = login;
 		this.password = password;
 	}
+	
 	/**
 	 * @return the idUser
 	 */
 	public int getIdUser() {
 		return idUser;
 	}
+	
 	/**
 	 * @param idUser the idUser to set
 	 */
 	public void setIdUser(int idUser) {
 		this.idUser = idUser;
 	}
+	
 	/**
 	 * @return the login
 	 */
 	public String getLogin() {
 		return login;
 	}
+	
 	/**
 	 * @param login the login to set
 	 */
 	public void setLogin(String login) {
 		this.login = login;
 	}
+	
 	/**
 	 * @return the password
 	 */
 	public String getPassword() {
 		return password;
 	}
+	
 	/**
 	 * @param password the password to set
 	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	/**
+	 * Method that allows the various user fields to be displayed as a character string.
+	 * @return the character string containing all the user's information 
+	 */
 	@Override
 	public String toString() {
 		return "User [idUser=" + idUser + ", login=" + login + ", password=" + password + "]";

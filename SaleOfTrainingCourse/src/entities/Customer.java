@@ -111,6 +111,10 @@ public class Customer {
 		this.phoneNumber = phoneNumber;
 	}
 
+	 /**
+	  * Method that allows the various customer fields to be displayed as a character string.
+	  * @return the character string containing all the customer's information 
+	  */
 	@Override
 	public String toString() {
 		return "Customer [id_customer=" + id_customer + ", lastname=" + lastname + ", firstname=" + firstname
