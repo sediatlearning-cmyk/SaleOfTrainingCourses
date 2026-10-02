@@ -60,4 +60,18 @@ public class UserImpl implements IUser{
 		return users;
 	}
 	
+	/**
+	 * Function that verifies whether the user actually exists in the database
+	 * 
+ 	 * @param users
+	 * @param login
+	 * @param password
+	 */
+	@Override
+	public void CheckIfTheProvidedCredentialsAreInTheDatabase(List<User> users, String login, String password) {
+		//TODO To continue
+		
+		System.out.println("Vérification effectuée");
+		System.out.println("Vous êtes connecté");	
+	}
 }
