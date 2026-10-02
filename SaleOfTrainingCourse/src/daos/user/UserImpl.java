@@ -13,9 +13,7 @@ import entities.User;
 
 public class UserImpl implements IUser{
 
-	/**
-	 * Function that allows saving the user's credentials to the database.
-	 */
+	
 	@Override
 	public void saveCredentialsUser(String login, String password) throws SQLException {
 		String sql = "INSERT INTO sotc_user (us_login, us_password)VALUES (?, ?);";
@@ -34,11 +32,8 @@ public class UserImpl implements IUser{
 			e.printStackTrace();
 		}
 	}
-	/**
-	 * Function that retrieves all user IDs and returns them in a list.
-	 * 
-	 * @return the list of the users
-	 */
+	
+	
 	public List<User> retrievingDatabaseCredentials() throws SQLException {
 		List<User> users = new ArrayList<User>();
 		String sql = "SELECT us_id_user, us_login, us_password FROM sotc_user;";
@@ -60,13 +55,7 @@ public class UserImpl implements IUser{
 		return users;
 	}
 	
-	/**
-	 * Function that verifies whether the user actually exists in the database
-	 * 
- 	 * @param users
-	 * @param login
-	 * @param password
-	 */
+	
 	@Override
 	public void CheckIfTheProvidedCredentialsAreInTheDatabase(List<User> users, String login, String password) {
 		//TODO To continue
