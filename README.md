@@ -18,7 +18,7 @@ A list of technologies used within the project:
 * [winp]: winp.zip, which you can use in the project
 * [winp]: SQL mariadb version 11.7.1, Nginx version 1.29.6, php version 8.4.19 and phpmyadmin version 5.2.3
   
-### Installation
+### Setup
 
 ```
 You must clone this project
@@ -32,7 +32,7 @@ Next, use phpMyAdmin to access the database; to do this, you will need:
  - To replace the winp config.inc.php file with the one located in the Winp folder, navigate to the following path: winp -> Install -> phpmyadmin-5.2.3, and paste the file there.
 
 ```
-### utilization
+### Utilization
 
 First, you need to start the database:
 Using WinP, click the "Start Services" button; once all WinP programs show as "ready," the database is ready to run.
