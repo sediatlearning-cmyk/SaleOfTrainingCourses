@@ -13,13 +13,7 @@ import entities.TrainingCourse;
 
 public class TrainingCourseImpl implements ITrainingCourse{
 
-
-	/**
-	 * Retrieves all training courses from the database that match the requested keyword.
-	 *
-	 * @return a list containing all training courses with this keyword
-	 * @throws SQLException 
-	 */
+	
 	@Override
 	public List<TrainingCourse> findByKeyWord(String keyword) throws SQLException {
 		List<TrainingCourse> trainingCoursesByKeyWord = new ArrayList<>();
@@ -48,11 +42,6 @@ public class TrainingCourseImpl implements ITrainingCourse{
 	}
 
 
-	/**
-	 * Retrieves all available training courses from the database.
-	 *
-	 * @return a list containing all available training courses
-	 */
 	@Override
 	public List<TrainingCourse> findByIsAvailableField() {
 
@@ -86,11 +75,7 @@ public class TrainingCourseImpl implements ITrainingCourse{
 	}
 
 
-	/**
-	 * Retrieves all in-person training courses from the database.
-	 *
-	 * @return a list containing all in-person training courses
-	 */
+	
 	@Override
 	public List<TrainingCourse> findByInPerson() {
 		List<TrainingCourse> inPersonTrainingCourses = new ArrayList<>();
@@ -121,11 +106,7 @@ public class TrainingCourseImpl implements ITrainingCourse{
 	}
 
 
-	/**
-	 * Retrieves all remote training courses from the database.
-	 *
-	 * @return a list containing all remote training courses
-	 */
+
 	@Override
 	public List<TrainingCourse> findByRemotely() {
 		List<TrainingCourse> remotelyTrainingCourses = new ArrayList<>();
