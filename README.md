@@ -16,9 +16,10 @@ A list of technologies used within the project:
 * [Java 1.8]: Version 1.8 
 * [Driver mariadb]: Version 2.3.0
 * [winp]: winp.zip, which you can use in the project
+* [winp]: SQL mariadb version 11.7.1, Nginx version 1.29.6, php version 8.4.19 and phpmyadmin version 5.2.3
+  
 ### Installation
-***
-A little intro about the installation. 
+
 ```
 You must clone this project
 
@@ -32,6 +33,7 @@ Next, use phpMyAdmin to access the database; to do this, you will need:
 
 ```
 ### utilization
+
 First, you need to start the database:
 Using WinP, click the "Start Services" button; once all WinP programs show as "ready," the database is ready to run.
 
